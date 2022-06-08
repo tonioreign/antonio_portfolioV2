@@ -16,7 +16,15 @@ function Home() {
                         digital experience. Currently focused on the frontend
                         development.
                     </p>
-                    <Resume>Download Resume</Resume>
+                    <Resume>
+                        <a
+                            href="./resume/JenkinsAntonio_Resume.pdf"
+                            title=""
+                            download
+                        >
+                            Download Resume
+                        </a>
+                    </Resume>
                 </Title>
             </Fade>
         </Container>

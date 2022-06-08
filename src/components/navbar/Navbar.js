@@ -30,7 +30,15 @@ function Navbar() {
                     <ContactsIcon style={{ color: 'var(--color__primary)' }} />
                     <a href="#contact">Contact</a>
                 </Wrap>
-                <Resume>Resume</Resume>
+                <Resume>
+                    <a
+                        href="./resume/JenkinsAntonio_Resume.pdf"
+                        title=""
+                        download
+                    >
+                        Resume
+                    </a>
+                </Resume>
             </NavMenu>
         </Nav>
     );
