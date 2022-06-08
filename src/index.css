@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    /* colors */
+    --color__primary: rgb(41, 191, 255);
+    --color__secondary: #fe692a;
+    --color__primary-variant: rgba(41, 190, 254, 0.2);
+    --color__secondary-variant: rgba(254, 105, 42, 0.2);
+    --color__bg: #0a192f;
+    --color__bg-variant: #10294f;
+    --color__white: rgb(226, 226, 226);
+    --color__white-variant: rgba(255, 255, 255, 0.7);
+
+    /* fonts */
+    --font__lg: 5rem;
+    --font__md: 2.5rem;
+    --font__sm: 1.5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.7;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color__white-variant);
+}
+
+a:hover {
+    color: var(--color__primary);
+}
+
+li {
+    list-style-type: none;
+}
+
+@keyframes backgroundAnimate {
+    0% {
+        transform: translateY(522vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
 }
